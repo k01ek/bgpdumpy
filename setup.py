@@ -30,7 +30,7 @@ class custom_install_lib(install_lib):
 
 
 with open('README.md', 'rb') as fd:
-    long_description = fd.read()
+    long_description = fd.read().decode('UTF-8')
 
 
 setup(
