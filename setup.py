@@ -29,7 +29,7 @@ class custom_install_lib(install_lib):
         check_call([os.path.join(cwd, 'mkdeps'), 'clean'], cwd=cwd)
 
 
-with open('README.md', 'r') as fd:
+with open('README.md', 'rb') as fd:
     long_description = fd.read()
 
 
